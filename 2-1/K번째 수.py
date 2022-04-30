@@ -1,5 +1,5 @@
-'''import sys
-#sys.stdin=open("input.txt","rt")
+import sys
+#sys.stdin=open("in5.txt","rt")
 
 case_num = int(input())
 result = []
@@ -12,13 +12,4 @@ for i in range(case_num):
     result.append(b[k-1])
 
 for i in range(case_num):
-    print('#',(i+1),' ',result[i])'''
-
-import sys
-T=int(input())
-for t in range(T):
-    n, s, e, k=map(int,input().split())
-    a = list(map(int, input().split()))
-    a = a[s-1:e]
-    a.sort()
-    print("#%d %d" %(t+1, a[k-1]))
+    print('#',(i+1),' ',result[i])

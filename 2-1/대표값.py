@@ -1,3 +1,6 @@
+import sys
+sys.stdin=open("in5.txt","rt")
+
 student_num = int(input())
 math = list(map(int, input().split()))
 

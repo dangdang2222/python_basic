@@ -1,3 +1,6 @@
+import sys
+sys.stdin=open("in5.txt","rt")
+
 n = int(input())
 ex=  list(map(int, input().split()))
 

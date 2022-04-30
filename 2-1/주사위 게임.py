@@ -1,3 +1,6 @@
+import sys
+sys.stdin=open("in5.txt","rt")
+
 n = int(input())
 a = [[]*3 for _ in range(n)] # [[0 for _ in range(j)]for _ in range(i)]
 

@@ -1,3 +1,6 @@
+import sys
+sys.stdin=open("in5.txt","rt")
+
 N = int(input())
 num = list(map(int,input().split()))
 def digit_sum(x):
