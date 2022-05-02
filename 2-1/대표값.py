@@ -65,6 +65,13 @@ for idx, x in enumerate(a):
             res=idx+1
 print(ave,res)
 '''
-
+'''
+round 함수는 round_half_even 방식임
+즉 4.50000000 인 경우4가 나옴(정확하게 4.5일때 짝수쪽으로 감)
+---> 따라서 반올림,반내림 하려면?
+a=66.5
+a=a+0.5
+a=int(a)
+'''
 
 
