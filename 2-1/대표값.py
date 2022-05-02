@@ -1,5 +1,5 @@
 import sys
-sys.stdin=open("in5.txt","rt")
+#sys.stdin=open("in5.txt","rt")
 
 student_num = int(input())
 math = list(map(int, input().split()))
@@ -37,6 +37,34 @@ if result==-1:
 
 print(result+1)
 
+'''
+최솟값 구하기
+arr=[5,3,7,9,2,5,2,6]
+arrMin = float('inf') //실수 무한대 값
+for i in arr:
+    if arr[i]<i:
+        arrMin=i
+'''
+'''
+import sys
+sys.stdin = input("input.txt","rt")
+n=int(input())
+a=list(map(int,input().split()))
+
+ave=round(sum(a)/n) //소수 첫째자리에서 반올림
+min = 2147000000 //정수형 가장 큰 값
+for idx, x in enumerate(a):
+    tmp = abs(x-ave) //절댓값=거릿값
+    if tmp<min:
+        min=tmp
+        score=x
+        res=indx+1
+    elif tmp==min:
+        if x>score:
+            score=x
+            res=idx+1
+print(ave,res)
+'''
 
 
 
