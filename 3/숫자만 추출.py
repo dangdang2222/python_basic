@@ -6,7 +6,6 @@ num=[]
 for i in str:
     if '0'<=i<='9':
         num.append(i)
-print(num)
 
 digit=1
 for i in range(len(num)-1): #3자리다 그럼 100이 나와야함 0 1 2
@@ -26,3 +25,10 @@ for i in num:
         len+=1
         digit/=10
 print(number)
+
+count=0
+for i in range(1,number+1):
+    if number%i==0:
+        count+=1
+
+print(count)
