@@ -18,14 +18,14 @@ for i in range(M):
     if b[i][1]==0:
         for k in range(N):
             if (k-count)<0:
-                p = k-count+5
+                p = k-count+N
             else:
                 p = k-count
             a[b[i][0]-1][p] = temp[k]   
     elif b[i][1]==1:
         for k in range(N):
-            if (k+count)>4:
-                p = k+count-5
+            if (k+count)>N-1:
+                p = k+count-N
             else:
                 p = k+count
             a[b[i][0]-1][p] = temp[k]
@@ -40,4 +40,34 @@ print(count)
     
 
 
+
+# import sys
+# sys.stdin = open("in1.txt","rt")
+
+# n=int(input())
+# a=[list(map(int,input().split())) for _ in range(n)]
+
+# m=int(input())
+# for i in range(m):
+#     h,t,k = map(int,input().split())
+#     if t==0:
+#         for _ in range(k):
+#             a[h-1].append(a[h-1].pop(0)) #pop(0)하면 맨 앞에거가 빠지고 알아서 땡겨지나봄
+#     else:
+#         for _ in range(k):
+#             a[h-1].insert(0,a[h-1].pop()) 
+
+
+# res = 0
+# s = 0
+# e = n-1
+# for i in range(n):
+#     for j in range(s, e+1):
+#         res+=a[i][j]
+#     if i<n//2:
+#         s+=1
+#         e-=1
+#     else:
+#         s-=1
+#         e+=1
 

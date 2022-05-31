@@ -1,5 +1,5 @@
 import sys
-sys.stdin=open("in5.txt","rt")
+#sys.stdin=open("in5.txt","rt")
 
 n = int(input())
 num = list(map(int, input().split()))

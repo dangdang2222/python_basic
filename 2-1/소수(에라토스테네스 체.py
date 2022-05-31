@@ -1,3 +1,6 @@
+import sys
+#sys.stdin=open("in2.txt","rt")
+#시간초과
 n = int(input())
 
 count=n
