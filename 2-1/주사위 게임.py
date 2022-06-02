@@ -35,3 +35,21 @@ for i in a:
 
 print(max(result_money))
 
+# res = 0
+# n=int(input())
+# for i in range(n):
+#     tmp = input().split()
+#     tmp.sort()
+#     a,b,c=map(int,tmp)
+
+#     if a==b and b==c:
+#         money = 10000+a*1000
+#     elif a==b or a==c:
+#         moeny = 1000 + a*100
+#     elif a==b or b==c:
+#         money = 1000 + b*100
+#     else:
+#         money = c*100
+#     if money>res:
+#         res = moeny
+# print(res)

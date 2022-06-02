@@ -1,4 +1,5 @@
 import sys
+from this import d
 sys.stdin = open("in5.txt","r")
 
 n,c = map(int,input().split())
@@ -24,8 +25,7 @@ def distance(k):
         return True
     else:
         return False
-#0 1 2 3 4
-#1 2 4 8 9
+
 lt = 1
 rt = a[n-1]-a[0]
 res=0
@@ -38,3 +38,32 @@ while lt<=rt:
         rt = mid-1
 
 print(res)
+
+
+# n,c = map(int,input().split())
+# Line = []
+# for _ in range(n):
+#     tmp = int(input())
+#     Line.append(tmp)
+# Line.sort()
+
+# lt=1
+# rt=Line[-1]-Line[0]
+
+# def Count(len):
+#     cnt=1
+#     ep=Line[0]
+#     for i in range(1,n):
+#         if Line[i]-ep>=len:
+#             cnt+=1
+#             ep = Line[i]
+    
+#     return cnt
+
+# while lt<=rt:
+#     mid=(lt+rt)//2
+#     if Count(mid)>=c:
+#         res = mid
+#         lt = mid+1
+#     else:
+#         rt = mid-1
